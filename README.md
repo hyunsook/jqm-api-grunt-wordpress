@@ -1,9 +1,11 @@
-# grunt-wordpress
-
-> **[NOTICE]** : 
-> This repository was moved the authentic [grunt-wordpress](https://github.
+> ## [NOTICE] :
+> 
+> **This repository was moved the authentic [grunt-wordpress](https://github.
 com/scottgonzalez/grunt-wordpress) repo
-to Grunt-0.4 in order to the [jqm branch of web-ui-fw](https://github.com/web-ui-fw/web-ui-fw/tree/jqm) repo.
+to Grunt-0.4 in order to the [jqm branch of web-ui-fw](https://github.com/web-ui-fw/web-ui-fw/tree/jqm) repo.**
+
+
+# grunt-wordpress
 
 Grunt plugin for publishing content to WordPress
 
