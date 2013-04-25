@@ -29,7 +29,7 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.2.0",
-    "wordpress": "0.1.3"
+    "wordpress": "git://github.com/hyunsook/jqm-api-node-wordpress.git#master"
   },
   "keywords": [
     "gruntplugin wordpress"
