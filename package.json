@@ -8,6 +8,10 @@
     "email": "scott.gonzalez@gmail.com",
     "url": "http://scottgonzalez.com"
   },
+  "maintainers": {
+    "name": "Hyunsook",
+    "email": "hspark.dasom@gmail.com"
+    },
   "repository": {
     "type": "git",
     "url": "git://github.com/hyunsook/jqm-api-grunt-wordpress.git"
@@ -33,7 +37,7 @@
     "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git#master"
   },
   "keywords": [
-    "gruntplugin wordpress"
+    "gruntplugin grunt-wordpress"
   ],
   "_id": "grunt-wordpress@1.0.7",
   "dist": {
