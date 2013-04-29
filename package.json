@@ -2,7 +2,7 @@
   "name": "grunt-wordpress",
   "description": "Grunt plugin for publishing content to WordPress",
   "version": "1.0.7",
-  "homepage": "https://github.com/scottgonzalez/grunt-wordpress",
+  "homepage": "https://github.com/hyunsook/jqm-api-grunt-wordpress",
   "author": {
     "name": "Scott González",
     "email": "scott.gonzalez@gmail.com",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/scottgonzalez/grunt-wordpress.git"
+    "url": "git://github.com/hyunsook/jqm-api-grunt-wordpress.git"
   },
   "bugs": {
-    "url": "https://github.com/scottgonzalez/grunt-wordpress/issues"
+    "url": "https://github.com/hyunsook/jqm-api-grunt-wordpress/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/scottgonzalez/grunt-wordpress/blob/master/LICENSE-MIT"
+      "url": "https://github.com/hyunsook/jqm-api-grunt-wordpress/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.2.0"
+    "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git#master"
   },
   "keywords": [
     "gruntplugin wordpress"
