@@ -29,15 +29,14 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "dependencies": {
-    "wordpress": "git://github.com/hyunsook/jqm-api-node-wordpress.git#master"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git#master"
+    "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git#master",
+    "wordpress": "git://github.com/hyunsook/jqm-api-node-wordpress.git#master"
   },
   "keywords": [
-    "gruntplugin grunt-wordpress"
+    "gruntplugin wordpress"
   ],
   "_id": "grunt-wordpress@1.0.7",
   "dist": {
