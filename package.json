@@ -25,11 +25,15 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "dependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "wordpress": "git://github.com/hyunsook/jqm-api-node-wordpress.git#master"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.2.0",
-    "wordpress": "git://github.com/hyunsook/jqm-api-node-wordpress.git#master"
+    "grunt-contrib-jshint": "~0.2.0"
   },
   "keywords": [
     "gruntplugin wordpress"
