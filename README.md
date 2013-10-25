@@ -9,6 +9,7 @@ to Grunt-0.4 in order to the [jqm branch of web-ui-fw](https://github.com/web-ui
 
 Grunt plugin for publishing content to WordPress
 
+Support this project by [donating on Gittip](https://www.gittip.com/scottgonzalez/).
 
 ## Getting Started
 
@@ -22,7 +23,12 @@ Then add this line to your project's `grunt.js` gruntfile:
 grunt.loadNpmTasks( "grunt-wordpress" );
 ```
 
-Finally, copy `grunt-wordpress.js` in to your WordPress install as a plugin.
+Finally, copy `grunt-wordpress.php` in to your WordPress install as a plugin.
+
+Resources are uploaded to `/gw-resources/{HOME_URL}/`, so if you'd like a
+friendlier name, you'll need to setup a redirect in your web server.
+
+If you have problems uploading resources, check the [Permissive Uploads](#permissive-uploads) section.
 
 ## API
 
@@ -322,6 +328,8 @@ Overwrites existing resources with the same path.
 * `callback` (`function( error, checksum )`): Callback to invoke after publishing the resource.
   * `checksum`: Checksum of the encoded content.
 
+*Note: Resources are uploaded to `/gw-resources/{HOME_URL}/`.*
+
 #### wordpress-delete-resource( path, callback )
 
 Deletes a resource from WordPress.
@@ -333,11 +341,46 @@ Deletes a resource from WordPress.
 
 #### wordpress-sync-resources( path, callback )
 
-Synchronizes all resources in `path` to the WordPRess site.
+Synchronizes all resources in `path` to the WordPress site.
 
 * `path`: The directory containing resources to synchronize.
 * `callback` (`function( error )`): Callback to invoke after synchronizing all resources.
 
+## Permissive Uploads
+
+Depending on what resources you're uploading, you may need to change some WordPress settings.
+Here are a few settings that might help:
+
+```php
+
+// Disable more restrictive multisite upload settings.
+remove_filter( 'upload_mimes', 'check_upload_mimes' );
+
+// Give unfiltered upload ability to super admins.
+define( 'ALLOW_UNFILTERED_UPLOADS', true );
+
+// Allow additional file types.
+add_filter( 'upload_mimes', function( $mimes ) {
+	$mimes[ 'eot' ] = 'application/vnd.ms-fontobject';
+	$mimes[ 'svg' ] = 'image/svg+xml';
+	$mimes[ 'ttf' ] = 'application/x-font-ttf';
+	$mimes[ 'woff' ] = 'application/font-woff';
+	$mimes[ 'xml' ] = 'text/xml';
+	$mimes[ 'php' ] = 'application/x-php';
+	$mimes[ 'json' ] = 'application/json';
+	return $mimes;
+});
+
+// Increase file size limit to 1GB.
+add_filter( 'pre_site_option_fileupload_maxk', function() {
+	return 1024 * 1024;
+});
+```
+
 ## License
-Copyright 2012 Scott González
+Copyright 2013 Scott González
 Licensed under the MIT license.
+
+---
+
+Support this project by [donating on Gittip](https://www.gittip.com/scottgonzalez/).
