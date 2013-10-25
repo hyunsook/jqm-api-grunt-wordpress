@@ -1,5 +1,5 @@
 {
-  "name": "grunt-wordpress-v2",
+  "name": "grunt-wordpress",
   "description": "Grunt plugin for publishing content to WordPress",
   "version": "1.0.7",
   "homepage": "https://github.com/hyunsook/jqm-api-grunt-wordpress",
@@ -37,6 +37,6 @@
     "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git#master"
   },
   "keywords": [
-    "gruntplugin wordpress-v2"
+    "gruntplugin wordpress"
   ]
 }
