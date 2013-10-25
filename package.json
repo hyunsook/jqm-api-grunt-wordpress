@@ -38,11 +38,5 @@
   },
   "keywords": [
     "gruntplugin wordpress"
-  ],
-  "_id": "grunt-wordpress@1.0.7",
-  "dist": {
-    "shasum": "5b4244dad471eb500fd78378617025739cc8e04d"
-  },
-  "_from": "grunt-wordpress@1.0.7",
-  "_resolved": "https://registry.npmjs.org/grunt-wordpress/-/grunt-wordpress-1.0.7.tgz"
+  ]
 }
